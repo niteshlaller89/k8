@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+    name: secondpod
+    labels:
+            env: prod
+spec:
+    containers:
+        - name: httpserver
+          image: nginx
